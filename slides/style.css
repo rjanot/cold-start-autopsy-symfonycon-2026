@@ -1,0 +1,1492 @@
+h3 {
+  background-color: #2b90b6;
+  background-image: linear-gradient(45deg, #4ec5d4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slidev-layout.cold-open,
+.slidev-layout.morgue {
+  background: #050505;
+  color: #e5e7eb;
+}
+
+.cold-open__clock {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 1.1rem;
+  color: #6b7280;
+  letter-spacing: 0.2em;
+}
+
+.cold-open__log {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 1.6rem;
+  color: #d1d5db;
+}
+
+.cold-open__counter {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #f9fafb;
+}
+
+.cold-open__counter--dead {
+  color: #ef4444;
+}
+
+.cold-open__status {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 1.6rem;
+  color: #22c55e;
+}
+
+.cold-open__verdict {
+  font-size: 2.2rem;
+  color: #f9fafb;
+}
+
+.flatline {
+  width: 100%;
+  height: 4rem;
+}
+
+.flatline path {
+  fill: none;
+  stroke: #22c55e;
+  stroke-width: 3;
+}
+
+.handwritten {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.dim {
+  opacity: 0.55;
+}
+
+.case-file__stamp {
+  display: inline-block;
+  padding: 0.2rem 0.9rem;
+  border: 3px solid #b91c1c;
+  color: #b91c1c;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+}
+
+.case-file__card {
+  padding: 1rem 1.4rem;
+  background: rgba(255, 253, 245, 0.92);
+  border: 1px solid #d6d3d1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  color: #1c1917;
+  text-align: left;
+}
+
+.slidev-layout.film .case-file__card :not(pre) > code {
+  background: rgba(0, 0, 0, 0.06);
+  color: #1c1917;
+}
+
+.slidev-layout .case-file__card h3 {
+  margin-top: 0;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: #7c2d12;
+  opacity: 1;
+  font-size: 1.05rem;
+}
+
+.case-file__card p {
+  font-size: 1rem;
+  margin: 0.4rem 0 0;
+}
+
+.slidev-layout h2.case-file__title {
+  font-size: 2.6rem;
+}
+
+.case-file__price {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.case-file__card li {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* Film grammar. The black slide backdrop is what a fade "through black" reveals; light layouts paint their own white. */
+.slidev-slide-content {
+  background: #000 !important;
+}
+
+.slidev-layout {
+  background-color: #ffffff;
+}
+
+.fade-black-enter-active {
+  transition: opacity 0.55s ease 0.55s;
+}
+
+.fade-black-leave-active {
+  transition: opacity 0.55s ease;
+}
+
+.fade-black-enter-from,
+.fade-black-leave-to {
+  opacity: 0;
+}
+
+.slidev-layout.film {
+  background: #0b0b0c;
+  color: #e7e5e4;
+}
+
+.slidev-layout.blackout {
+  background: #000;
+  color: #e7e5e4;
+}
+
+.film-caption {
+  position: absolute;
+  left: 1.8rem;
+  bottom: 2.6rem;
+  font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: #57534e;
+}
+
+.scene-line {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 700;
+}
+
+.report-strip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.55rem 1.2rem;
+  background: #fffdf5;
+  color: #1f2937;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.45);
+  font-family: 'Fira Code', ui-monospace, monospace;
+  transform: rotate(-1deg);
+}
+
+.report-strip__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.report-strip__value {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.15rem;
+  color: #b91c1c;
+}
+
+.intertitle {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #e7e5e4;
+  animation: intertitle-in 1.6s ease both;
+}
+
+@keyframes intertitle-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.protocol-step {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.9rem 1.4rem;
+  border: 2px solid #facc15;
+  border-radius: 0.6rem;
+  background: rgba(250, 204, 21, 0.08);
+  text-align: left;
+}
+
+.protocol-step__marker {
+  flex: none;
+}
+
+/* Charts (dark film surface). Roles follow the dataviz reference palette, dark steps, validated on #0b0b0c. */
+.viz {
+  width: 100%;
+  height: auto;
+  font-family: 'Signika Negative', sans-serif;
+  --surface: #0b0b0c;
+  --ink-primary: #f0efec;
+  --ink-secondary: #c3c2b7;
+  --ink-muted: #898781;
+  --grid: #2c2c2a;
+  --axis: #383835;
+  --series-without: #3987e5;
+  --series-with: #d95926;
+}
+
+.viz text {
+  fill: var(--ink-secondary);
+  font-size: 13px;
+}
+
+.viz__legend text {
+  fill: var(--ink-primary);
+  font-size: 14px;
+}
+
+.viz .viz__label {
+  fill: var(--ink-primary);
+  font-size: 15px;
+}
+
+.viz .viz__value {
+  fill: var(--ink-primary);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.viz .viz__tick {
+  fill: var(--ink-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.viz .viz__caption {
+  fill: var(--ink-muted);
+  font-size: 12px;
+}
+
+.viz .viz__band-label {
+  fill: var(--ink-secondary);
+  font-size: 12px;
+}
+
+.viz__grid {
+  stroke: var(--grid);
+  stroke-width: 1;
+}
+
+.viz__axis {
+  stroke: var(--axis);
+  stroke-width: 1;
+}
+
+.viz__connector {
+  stroke: var(--ink-muted);
+  stroke-width: 2;
+}
+
+.viz__band {
+  fill: rgba(240, 239, 236, 0.07);
+}
+
+.viz__mark--without {
+  fill: var(--series-without);
+}
+
+.viz__mark--with {
+  fill: var(--series-with);
+}
+
+.viz__dot {
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+
+/* Act II */
+.split-panel {
+  flex: 1;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.6rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #27272a;
+  text-align: left;
+}
+
+.split-panel__label {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #a8a29e;
+}
+
+.split-panel__value {
+  margin-top: 0.4rem;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.split-panel__note {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #a8a29e;
+}
+
+.split-panel--hidden {
+  visibility: hidden;
+}
+
+.clock-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  width: 100%;
+  text-align: left;
+}
+
+.clock-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clock-bar__name {
+  flex: none;
+  width: 11rem;
+  font-size: 1rem;
+  color: #d6d3d1;
+  text-align: right;
+}
+
+.clock-bar__track {
+  position: relative;
+  flex: 1;
+  height: 1.9rem;
+}
+
+.clock-bar__fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 4px;
+  background: #57534e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.7rem;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fafaf9;
+}
+
+.terminal {
+  padding: 1rem 1.3rem;
+  border-radius: 0.6rem;
+  background: #111214;
+  border: 1px solid #2a2e35;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-variant-ligatures: none;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+  white-space: pre;
+}
+
+.terminal__line--fatal {
+  color: #fca5a5;
+}
+
+.terminal__line--probe {
+  color: #86efac;
+}
+
+.tox-report {
+  width: 52rem;
+  padding: 1.6rem 2rem 1.8rem;
+  background: #fffdf5;
+  color: #1c1917;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+  transform: rotate(-1deg);
+  text-align: left;
+}
+
+.tox-report__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.6rem;
+  border-bottom: 3px solid #1c1917;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.tox-report__field {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: #57534e;
+}
+
+.tox-report__finding {
+  margin-top: 0.4rem;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-variant-ligatures: none;
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #b91c1c;
+}
+
+
+.counter-card {
+  flex: 1;
+  padding: 1rem 1.3rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27272a;
+  background: rgba(255, 255, 255, 0.04);
+  text-align: left;
+}
+
+.counter-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #a8a29e;
+}
+
+.counter-card__numbers {
+  margin-top: 0.5rem;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.95rem;
+  color: #e7e5e4;
+}
+
+.counter-card__ratio {
+  margin-top: 0.3rem;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.counter-card__verdict {
+  font-size: 1rem;
+  color: #d6d3d1;
+}
+
+.hypothesis {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px dashed #a8a29e;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  color: #d6d3d1;
+  text-align: left;
+}
+
+.hypothesis__tag {
+  margin-right: 0.4rem;
+  font-weight: 700;
+  color: #fde68a;
+}
+
+.slidev-layout.film :not(pre) > code,
+.slidev-layout.blackout :not(pre) > code {
+  padding: 0.05em 0.35em;
+  border-radius: 0.3em;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fde68a;
+}
+
+/* Act III */
+.instrument-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 1rem;
+  color: #d6d3d1;
+  text-align: left;
+}
+
+.ratio-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-align: left;
+}
+
+.ratio-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ratio-bar__name {
+  flex: none;
+  width: 14rem;
+  font-size: 1.05rem;
+  color: #d6d3d1;
+  text-align: right;
+}
+
+.ratio-bar__track {
+  flex: 1;
+  height: 2.2rem;
+}
+
+.ratio-bar__fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.ratio-bar__fill--cold {
+  background: #b91c1c;
+}
+
+.ratio-bar__fill--warm {
+  background: #22c55e;
+}
+
+.ratio-big {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fafaf9;
+}
+
+.marker-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 1.8rem;
+  text-align: left;
+}
+
+.marker-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.marker-bar__name {
+  flex: none;
+  width: 11rem;
+  text-align: right;
+}
+
+.marker-bar__track {
+  position: relative;
+  flex: 1;
+  display: flex;
+  height: 3.2rem;
+  gap: 2px;
+}
+
+.marker-bar__tick {
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  border-left: 3px solid #fde68a;
+}
+
+.marker-bar__tick span {
+  position: absolute;
+  right: 0.4rem;
+  bottom: calc(100% - 0.6rem);
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  color: #fde68a;
+}
+
+.marker-bar__fill {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-variant-ligatures: none;
+  font-size: 0.95rem;
+  white-space: pre;
+  color: #fafaf9;
+  transition: background 0.6s ease, opacity 0.6s ease;
+}
+
+.marker-bar__fill--suspect {
+  background: #b91c1c;
+}
+
+.marker-bar__fill--db {
+  padding: 0;
+  background: #3987e5;
+}
+
+.marker-bar__fill--hidden {
+  opacity: 0;
+}
+
+.marker-bar__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-left: 12rem;
+  font-size: 1.05rem;
+  color: #d6d3d1;
+  transition: opacity 0.6s ease;
+}
+
+.marker-bar__swatch {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 2px;
+  background: #3987e5;
+}
+
+.marker-bar__swatch--start {
+  background: #b91c1c;
+}
+
+.marker-bar__legend strong {
+  color: #fde68a;
+}
+
+.marker-bar__legend--hidden {
+  opacity: 0;
+}
+
+.file-bill {
+  display: flex;
+  align-items: stretch;
+  gap: 0.8rem;
+}
+
+.file-bill__part {
+  flex: 1;
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27272a;
+  background: rgba(255, 255, 255, 0.04);
+  text-align: left;
+}
+
+.file-bill__part--total {
+  border-color: #166534;
+  background: rgba(134, 239, 172, 0.06);
+}
+
+.file-bill__value {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #fafaf9;
+}
+
+.file-bill__part--total .file-bill__value {
+  color: #86efac;
+}
+
+.file-bill__label {
+  font-size: 1rem;
+  color: #d6d3d1;
+}
+
+.file-bill__op {
+  align-self: center;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #a8a29e;
+}
+
+.model-card {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1rem;
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27272a;
+  background: rgba(255, 255, 255, 0.04);
+  text-align: left;
+}
+
+.model-card__value {
+  flex: none;
+  white-space: nowrap;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #86efac;
+}
+
+.model-card__label {
+  font-size: 1.05rem;
+  color: #d6d3d1;
+}
+
+.file-pile {
+  position: relative;
+  flex: none;
+  width: 15rem;
+  height: 17rem;
+}
+
+.file-pile__sheet {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1rem;
+  width: 11rem;
+  height: 3.4rem;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fafaf9 0%, #e7e5e4 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dev-dep__name {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #fde68a;
+}
+
+.prediction-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: left;
+}
+
+.prediction-row {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr 1.8fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 1.1rem;
+  color: #e7e5e4;
+}
+
+.prediction-row--head {
+  background: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a8a29e;
+}
+
+.prediction-row--miss {
+  border: 1px dashed #a8a29e;
+}
+
+.prediction-row__ok {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-weight: 700;
+  color: #86efac;
+}
+
+.prediction-row__none {
+  color: #78716c;
+}
+
+.prediction-row__miss {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-weight: 700;
+  color: #fca5a5;
+}
+
+.prediction-row__miss small {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #d6d3d1;
+}
+
+.mistake-card {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27272a;
+  background: rgba(255, 255, 255, 0.04);
+  text-align: left;
+}
+
+.mistake-card__terminal {
+  font-size: 0.8rem;
+  padding: 0.6rem 0.8rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.mistake-card__facts {
+  font-size: 0.92rem;
+  color: #d6d3d1;
+}
+
+.mistake-card__lesson {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fde68a;
+}
+
+/* Act III · III.2 same-instance details */
+.same-instance {
+  display: grid;
+  grid-template-columns: 14rem 12rem 12rem;
+  column-gap: 1.5rem;
+  row-gap: 0.3rem;
+  align-items: baseline;
+  text-align: left;
+  font-size: 1.05rem;
+}
+
+.same-instance__head {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.95rem;
+  color: #a8a29e;
+}
+
+.same-instance__label {
+  color: #d6d3d1;
+}
+
+.same-instance__value {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  color: #fafaf9;
+}
+
+.same-instance__label--key,
+.same-instance__value--key {
+  color: #fde68a;
+  font-weight: 700;
+}
+
+.same-instance__phases {
+  font-size: 1.05rem;
+  color: #d6d3d1;
+}
+
+.same-instance__phases strong {
+  color: #fafaf9;
+}
+
+/* Act III · III.8 AiBundle inheritance chain */
+.chain-panel {
+  padding: 0.7rem 1.1rem;
+  border: 1px solid #3f3f46;
+  border-radius: 0.6rem;
+  background: #16181d;
+  text-align: left;
+}
+
+.chain-panel__title {
+  font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a8a29e;
+}
+
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+}
+
+.chain__node {
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.35rem;
+  border: 1px solid #52525b;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: #e7e5e4;
+}
+
+.chain__node--gone {
+  border-color: #b91c1c;
+  background: rgba(185, 28, 28, 0.18);
+  text-decoration: line-through;
+  text-decoration-color: rgba(252, 165, 165, 0.8);
+}
+
+.chain__link {
+  font-size: 0.75rem;
+  color: #a8a29e;
+}
+
+.chain-panel__note {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #d6d3d1;
+}
+
+.chain-panel__lesson {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fde68a;
+}
+
+/* Five-act restructure · Act I plant */
+.release-note {
+  align-self: flex-start;
+  min-width: 38rem;
+  padding: 1rem 1.4rem;
+  border: 1px solid #3f3f46;
+  border-radius: 0.6rem;
+  background: #16181d;
+  text-align: left;
+  font-family: 'Fira Code', ui-monospace, monospace;
+}
+
+.release-note__line {
+  margin-top: 0.6rem;
+  font-size: 1.15rem;
+  color: #fafaf9;
+}
+
+.release-note__line--quiet {
+  font-size: 0.95rem;
+  color: #a8a29e;
+}
+
+.release-note__mark {
+  display: inline-block;
+  width: 1.4rem;
+  color: #86efac;
+}
+
+.release-note__line--quiet .release-note__mark {
+  color: #a8a29e;
+}
+
+.release-note__gain {
+  margin-left: 0.8rem;
+  color: #86efac;
+}
+
+/* Act II · environment */
+.env-table {
+  padding: 0.8rem 1.1rem;
+  border: 1px solid #3f3f46;
+  border-radius: 0.6rem;
+  background: #16181d;
+  text-align: left;
+}
+
+.env-table__title {
+  font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: #a8a29e;
+}
+
+.env-table__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr 1.25fr 1.45fr 1fr;
+  column-gap: 1rem;
+  row-gap: 0.35rem;
+  margin-top: 0.5rem;
+  align-items: baseline;
+  font-size: 0.95rem;
+}
+
+.env-table__head {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: #a8a29e;
+}
+
+.env-table__step {
+  color: #d6d3d1;
+}
+
+.env-table__cell {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  color: #fafaf9;
+}
+
+.env-table__cell--dim {
+  color: #a8a29e;
+}
+
+.env-table__cell--boot {
+  color: #fde68a;
+}
+
+.env-table__cell--raw {
+  color: #fca5a5;
+}
+
+.env-table__cell--floor {
+  color: #fde68a;
+  font-weight: 700;
+}
+
+.env-table__late {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.env-table--corrected .env-table__late {
+  opacity: 1;
+}
+
+/* Act II · how to correct */
+.depends-card {
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #3f3f46;
+  background: #16181d;
+  text-align: left;
+  font-size: 1.05rem;
+  color: #e7e5e4;
+}
+
+.depends-card__title {
+  margin-bottom: 0.3rem;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.depends-card__item {
+  padding-left: 1.2rem;
+}
+
+.depends-card__item::before {
+  content: '· ';
+}
+
+.depends-card--yes .depends-card__title {
+  color: #fca5a5;
+}
+
+.depends-card--no .depends-card__title {
+  color: #86efac;
+}
+
+.correct-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #fafaf9;
+}
+
+.correct-list > div {
+  padding-left: 2.7rem;
+  text-indent: -2.7rem;
+}
+
+.correct-list__n {
+  text-indent: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+  background: #fde68a;
+  color: #111;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Act IV · estimates */
+.estimate {
+  margin-top: 0.3rem;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: #a8a29e;
+}
+
+/* Act IV · slide 43, one PR split into its three changes */
+.pr-split {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  column-gap: 2.5rem;
+  row-gap: 0.35rem;
+  align-items: baseline;
+  text-align: left;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.pr-split__head {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a8a29e;
+}
+
+.pr-split__change {
+  color: #e7e5e4;
+  white-space: nowrap;
+}
+
+.pr-split__value {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  color: #d6d3d1;
+}
+
+.pr-split__value--win {
+  color: #86efac;
+  font-weight: 700;
+}
+
+.pr-split__value--dim {
+  color: #71717a;
+}
+
+.pr-split__total {
+  align-self: stretch;
+  margin-top: 0.7rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid #3f3f46;
+}
+
+.pr-split__right {
+  text-align: right;
+}
+
+.pr-split--past {
+  opacity: 0.4;
+}
+
+/* Act V */
+.title-trial__number {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #86efac;
+}
+
+.title-trial__caption {
+  margin-top: 0.6rem;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a8a29e;
+}
+
+.protocol-recap {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1.4rem;
+  row-gap: 0.7rem;
+  align-items: center;
+  text-align: left;
+}
+
+.protocol-recap__step {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #fde68a;
+}
+
+.protocol-recap__how {
+  font-size: 0.95rem;
+  color: #d6d3d1;
+}
+
+/* Act IV · the first read */
+.first-read__of {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #a8a29e;
+}
+
+.first-read__gauge {
+  height: 0.7rem;
+  margin-top: 0.6rem;
+  border-radius: 0.35rem;
+  background: #3f3f46;
+  overflow: hidden;
+}
+
+.first-read__gauge > div {
+  height: 100%;
+  background: #fca5a5;
+}
+
+.first-read__results {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  column-gap: 3rem;
+  row-gap: 0.1rem;
+  align-items: baseline;
+  text-align: left;
+}
+
+.first-read__label {
+  font-size: 1.05rem;
+  color: #e7e5e4;
+}
+
+.first-read__value {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 1.1rem;
+  color: #a8a29e;
+}
+
+.first-read__value--win {
+  font-weight: 700;
+  color: #86efac;
+}
+
+.first-read__counters .counter-card {
+  padding: 0.6rem 1.1rem;
+}
+
+.first-read__counters .counter-card__ratio {
+  font-size: 2rem;
+}
+
+/* Quick vote (slide after the crime scene) */
+.vote-card {
+  text-align: center;
+  transition: opacity 0.5s ease, border-color 0.5s ease;
+}
+
+.vote-card__letter {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  color: #7c2d12;
+}
+
+.vote-card__range {
+  margin-top: 0.4rem;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 2.1rem;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+.vote-card__answer {
+  margin-top: 0.3rem;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.8rem;
+  color: #b91c1c;
+}
+
+.vote-card--wrong {
+  opacity: 0.35;
+}
+
+.vote-card--right {
+  border: 3px solid #b91c1c !important;
+}
+
+/* Redacted line on the coroner badge */
+.redacted {
+  display: inline-block;
+  height: 1.25em;
+  margin: 0.08em 0;
+  padding: 0 0.3rem;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #111827;
+  color: #111827;
+  border-radius: 0.1rem;
+  transform: rotate(-0.4deg);
+}
+
+/* Slide 5 · the crime scene as one filled-in form, a row per fact */
+.crime-scene {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.crime-scene__row {
+  display: flex;
+  align-items: baseline;
+  gap: 1.6rem;
+}
+
+.slidev-layout .crime-scene__row h3 {
+  flex: none;
+  width: 11rem;
+  margin: 0;
+  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.crime-scene__row p {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+
+/* Audience-question decors (line-up, witness stand): the shared "your turn" cue */
+.witness-call {
+  position: absolute;
+  top: 1.1rem;
+  left: 1.6rem;
+  z-index: 3;
+  padding: 0.15rem 0.7rem;
+  background: #facc15;
+  color: #111;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+
+.protocol-step--compact {
+  gap: 1rem;
+  padding: 0.5rem 1.2rem;
+}
+
+/* Act III · preload doses */
+/* Same stamp as the case file; sized like it, whatever the surrounding text. */
+.dose-tag {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+/* Same place as on the slides without a camera: stamp top left, title right under it. */
+.dose-banner {
+  position: absolute;
+  top: 2.5rem;
+  left: 3.5rem;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.875rem;
+  color: #fafaf9;
+  transition: opacity 0.6s ease;
+}
+
+.dose-banner--hidden {
+  opacity: 0;
+}
+
+/* Report strip laid over a table scene, revealed on the last wide shot */
+.table-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4.2rem;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.8s ease 1.2s;
+}
+
+.table-strip--shown {
+  opacity: 1;
+}
+
+
+
+.slidev-layout .crime-scene--wide-labels .crime-scene__row h3 {
+  width: 13.5rem;
+}
+
+.hiring-qr,
+.talk-qr {
+  position: relative;
+  z-index: 1;
+  width: 15rem;
+  height: auto;
+  padding: 0.5rem;
+  border: 2px solid #1c1917;
+  border-radius: 0.8rem;
+  background: #fff;
+}
+
+.talk-qr {
+  flex: none;
+  width: 12rem;
+}
+
+/* Final slide: protocol, QR codes and credits on one screen, left up during the questions */
+.protocol-recap--compact {
+  column-gap: 1rem;
+  row-gap: 0.35rem;
+}
+
+.protocol-recap--compact .protocol-recap__step {
+  font-size: 1.1rem;
+}
+
+.protocol-recap--compact .protocol-recap__how {
+  font-size: 0.75rem;
+}
+
+.finale-qrs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: none;
+  margin-right: 1.5rem;
+}
+
+.finale-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.finale-qr img {
+  width: 12rem;
+  height: auto;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.finale-qr__label {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fde68a;
+}
+
+.finale-credits {
+  margin-top: 0.6rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #c4bfba;
+}
+
+.finale-credits strong {
+  color: #e7e5e4;
+  font-weight: 600;
+}
