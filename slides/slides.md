@@ -59,7 +59,7 @@ Ten seconds. Nothing
 
 At fourteen seconds, the server finally answers. Two hundred, OK. But the client's timeout had already expired. Nobody was there to read it.
 
-[click] The first request of the morning was found dead. Fourteen seconds.
+[click] The first request of the morning was found dead.
 -->
 
 ---
@@ -132,7 +132,7 @@ _[🧤 put on the lab coat]_
 
 Before we do the autopsy: my badge.
 
-I am Rémi JANOT, Co-founder and CTO at Vasco, a fintech.
+I am Rémi JANOT, Co-founder and CTO at [Vasco dot fund](https://www.vasco.fund), a french fintech.
 
 On the force since PHP three, and the preview release of Symfony two
 
@@ -162,9 +162,11 @@ transition: cut
 <!--
 ## Let me open the case file.
 
-The victim: a Symfony 7.3 application, on PHP 8.4, versions in December 2025
+The victim: a Symfony 7.3 application, on PHP 8.4, versions in December twenty twenty-five
 
 A GraphQL API, built with OverblogBundle / Webonyx library.
+
+---
 
 About three thousand services in the container
 
@@ -172,9 +174,9 @@ More than nine hundred generated GraphQL types
 
 Nearly three hundred Doctrine entities.
 
-Served by Apache, with mod_php.
+---
 
-Nothing exotic. A fairly big, fairly ordinary Symfony application.
+Served by Apache, with mod_php. Nothing exotic. A fairly big, fairly ordinary Symfony application.
 -->
 
 ---
