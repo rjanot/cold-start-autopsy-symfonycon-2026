@@ -1,0 +1,1 @@
+.exhibits-set{position:absolute;inset:0}.exhibits-set__exhibit{transform-origin:50%}.exhibits-set__verdict{text-align:center;color:#fafaf9;text-shadow:0 6px 30px #000c;opacity:0;font-family:Signika Negative,sans-serif;font-size:130px;font-weight:700;transition:opacity 1s .8s;position:absolute;top:2600px;left:0;right:0}.exhibits-set--verdict .exhibits-set__verdict{opacity:1}
