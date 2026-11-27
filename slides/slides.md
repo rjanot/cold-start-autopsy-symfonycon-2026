@@ -97,11 +97,7 @@ _[Let the title sit for a second.]_
 
 That's the kind of case I like.
 
-_[LIGHTS UP]_
-
 Good afternoon, SymfonyCon.
-
-_[Normal voice, out of character, looking at the room.]_
 
 Yes, that was a film noir. For the next thirty minutes, I'm taking you into a crime film: five acts, one body, one coroner.
 At some point, you'll be called as witnesses.
@@ -120,7 +116,7 @@ transition: fade-black
 
 <CoronerBadge name="Rémi JANOT">
 <ul>
-  <li><strong>Badge</strong> <span>#10100 <span class="dim">— my zip code. It <em>is</em> binary.</span></span></li>
+  <li><strong>Badge</strong> <span>#10100 <span class="flag-fr" role="img" aria-label="France" /> <span class="dim">— my zip code. It <em>is</em> binary.</span></span></li>
   <li><strong>Rank</strong> <span>Co-founder &amp; CTO @ Vasco</span></li>
   <li><strong>On the force</strong> <span>since PHP 3 · Symfony since 2011</span></li>
   <li><strong>Known as</strong> <span>the Eye of Sauron <span class="dim">— in code review</span></span></li>
@@ -132,7 +128,7 @@ transition: fade-black
 </div>
 
 <!--
-_[🥼 put on the lab coat]_
+_[🧤 put on the lab coat]_
 
 Before we do the autopsy: my badge.
 
@@ -166,15 +162,15 @@ transition: cut
 <!--
 ## Let me open the case file.
 
-The victim: a Symfony 7.3 application, on PHP 8.4
+The victim: a Symfony 7.3 application, on PHP 8.4, versions in December 2025
 
 A GraphQL API, built with OverblogBundle / Webonyx library.
 
 About three thousand services in the container
 
-About nine hundred and thirty generated GraphQL types
+More than nine hundred generated GraphQL types
 
-About two hundred and ninety Doctrine entities.
+Nearly three hundred Doctrine entities.
 
 Served by Apache, with mod_php.
 
@@ -204,14 +200,14 @@ transition: cut
 <!--
 Now, the crime scene. And the first question you should ask: why does it die every night?
 
-We run on Google Cloud Run. There is almost no infrastructure to manage. No servers, no cluster.
+We run on Google Cloud Run. It is a Serverless  Container runtime. There is almost no infrastructure to manage. No servers, no cluster.
 We give Google a container image, and Google runs it.
 
 Each file is fetched from the image the first time someone reads it.
 That is why a new instance starts in about a second. 
 
 We scale to zero. When nobody calls the application, no instance runs, and we pay
-almost nothing.
+almost nothing. More, I should say, we pay also Google NOT to run it !
 
 And we are single tenant. Every client gets its own, isolated deployment.
 Scale to zero is what makes that affordable.
@@ -1919,11 +1915,11 @@ markers: false
 transition: fade-black
 ---
 
-<div class="h-full flex flex-col justify-center gap-3 px-12">
+<div class="finale h-full flex flex-col justify-center gap-3 px-12">
 
 <div class="flex items-center gap-10">
 
-<div class="flex-1 flex flex-col gap-4">
+<div class="finale__main flex-1 flex flex-col gap-4">
 
 <div class="scene-line text-3xl" style="color: #fafaf9">The protocol. Take it home.</div>
 
@@ -1953,11 +1949,11 @@ transition: fade-black
 <div class="finale-qrs">
   <div class="finale-qr">
     <img src="/talk-repo-qr.svg" alt="QR code to the talk repository on GitHub">
-    <div class="finale-qr__label">Slides &amp; more stuff</div>
+    <div class="finale-qr__note finale-qr__note--top">Slides &amp;<br>more stuff<svg class="finale-qr__arrow" viewBox="0 0 120 70" aria-hidden="true"><path d="M8 6 C 6 48, 46 68, 110 44" /><path d="M94 41 L110 44 L100 57" /></svg></div>
   </div>
   <div class="finale-qr">
     <img src="/vasco-hiring-qr.svg" alt="QR code to my LinkedIn profile">
-    <div class="finale-qr__label">My LinkedIn<br>Vasco is hiring</div>
+    <div class="finale-qr__note finale-qr__note--bottom">My LinkedIn<br>Vasco is hiring!<svg class="finale-qr__arrow" viewBox="0 0 120 70" aria-hidden="true"><path d="M8 6 C 6 48, 46 68, 110 44" /><path d="M94 41 L110 44 L100 57" /></svg></div>
   </div>
 </div>
 

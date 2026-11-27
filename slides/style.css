@@ -1447,36 +1447,70 @@ h3 {
   font-size: 0.75rem;
 }
 
+/* The QR codes use the full slide height, outside the layout padding: 49 % each. */
+.finale {
+  position: relative;
+}
+
+.finale__main {
+  margin-right: 19rem;
+}
+
 .finale-qrs {
+  position: absolute;
+  top: -2.5rem;
+  bottom: -2.5rem;
+  right: -2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  flex: none;
-  margin-right: 1.5rem;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
 
 .finale-qr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
+  position: relative;
+  height: 49%;
 }
 
 .finale-qr img {
-  width: 12rem;
-  height: auto;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1;
   padding: 0.35rem;
   border-radius: 0.5rem;
   background: #fff;
 }
 
-.finale-qr__label {
-  font-family: 'Fira Code', ui-monospace, monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fde68a;
+/* Scribbled by the coroner next to each code: same marker as the autopsy report, a brighter red for the dark slide. */
+.finale-qr__note {
+  position: absolute;
+  right: calc(100% + 0.4rem);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  text-align: right;
+  white-space: nowrap;
+  color: #ef4444;
+  transform: rotate(-5deg);
+}
+
+.finale-qr__note--top {
+  top: 22%;
+}
+
+.finale-qr__note--bottom {
+  top: 34%;
+}
+
+.finale-qr__arrow {
+  display: block;
+  width: 5.5rem;
+  margin: 0.2rem 0 0 auto;
+  fill: none;
+  stroke: #ef4444;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .finale-credits {

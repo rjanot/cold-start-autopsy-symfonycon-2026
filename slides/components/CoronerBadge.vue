@@ -92,6 +92,17 @@ defineProps<{ name: string }>()
   line-height: 1.3;
 }
 
+.flag-fr {
+  display: inline-block;
+  width: 1.2em;
+  height: 0.8em;
+  margin: 0 0.1em;
+  vertical-align: -0.05em;
+  border: 1px solid #d6d3d1;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #0055a4 0 33.3%, #ffffff 33.3% 66.6%, #ef4135 66.6% 100%);
+}
+
 .coroner-badge__fields li::before {
   content: none;
 }
